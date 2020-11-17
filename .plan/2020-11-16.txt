@@ -1,0 +1,23 @@
+This is the initial drop of my files from school.
+This is a barely decent implementation that worked well for the class.
+There is more that I would like to see done with this before it is complete.
+
+- Fix read-in issue with the last set of 1-7 characters in the file.
+    Right now there is an issue with reading bytes that are not an even multiple of 8.
+    That is due to an inadequate understanding of the bytes being read in when it was last worked on.
+
+- Begin changing the project to a pure C language
+    The program was already written to minimize use of C++ functions because of differences between my professor's computer and mine.
+    I did not know enough about C at the time to write in plain C, but this is clearly the better choice given how it is currently written.
+
+- Fix options to use '-' options rather than a strict syntax
+    Having more experience with the command line, this is clearly the better way to handle the options
+
+- Combine 'desencrypt' and 'desdecrypt' into one program
+
+- Create separate files for des functions and methods.
+    Break up the files to be used by other programs.
+
+- Implement TripleDES as "3descrypt" to make it a more practical project.
+
+- Hash the keys to add randomization and allow for more words and phrases to be used with the length constrained.
