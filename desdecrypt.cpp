@@ -213,7 +213,19 @@ int main( int argc, char* argv[] )
 
 			finalPermutation(currentBlock);
 
-			outputFile.write((char*)currentBlock, 8);
+			if(k == numOfBlocks - 1){
+				int termIndex = 0;
+
+				while(currentBlock[termIndex] != 0 && termIndex < 8){
+					termIndex++;
+				}
+
+				outputFile.write((char*)currentBlock, termIndex);
+			}
+
+			else
+				outputFile.write((char*)currentBlock, 8);
+
 			outputFile.flush();
 
 			delete currentBlock;
